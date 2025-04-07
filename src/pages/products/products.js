@@ -1,0 +1,68 @@
+const products = [
+    {
+      id: 1,
+      name: 'Control Gaming Pro',
+      price: 22500,
+      category: 'electrónica',
+      description: 'Control inalámbrico para gaming con retroalimentación háptica',
+      image: './svg/big_control.jpeg',
+    },
+    {
+      id: 1,
+      name: 'Control Gaming Pro',
+      price: 22500,
+      category: 'electrónica',
+      description: 'Control inalámbrico para gaming con retroalimentación háptica',
+      image: './svg/big_control.jpeg',
+    },
+    {
+      id: 1,
+      name: 'Camara',
+      price: 22500,
+      category: 'electrónica',
+      description: 'Control inalámbrico para gaming con retroalimentación háptica',
+      image: './svg/big_control.jpeg',
+    },
+    {
+      id: 1,
+      name: 'Control Gaming Pro',
+      price: 22500,
+      category: 'electrónica',
+      description: 'Control inalámbrico para gaming con retroalimentación háptica',
+      image: './svg/big_control.jpeg',
+    },
+    {
+      id: 1,
+      name: 'Control Gaming Pro',
+      price: 22500,
+      category: 'electrónica',
+      description: 'Control inalámbrico para gaming con retroalimentación háptica',
+      image: './svg/big_control.jpeg',
+    },
+    {
+      id: 1,
+      name: 'Control Gaming Pro',
+      price: 22500,
+      category: 'electrónica',
+      description: 'Control inalámbrico para gaming con retroalimentación háptica',
+      image: './svg/big_control.jpeg',
+    },
+    {
+      id: 1,
+      name: 'Control Gaming Pro',
+      price: 22500,
+      category: 'electrónica',
+      description: 'Control inalámbrico para gaming con retroalimentación háptica',
+      image: './svg/big_control.jpeg',
+    },
+    {
+      id: 1,
+      name: 'Control Gaming Pro',
+      price: 22500,
+      category: 'electrónica',
+      description: 'Control inalámbrico para gaming con retroalimentación háptica',
+      image: './svg/big_control.jpeg',
+    },
+  ];
+  
+  export default products;
