@@ -5,7 +5,6 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
   font-style: normal;
-  width: 100%;
 }
 
 
@@ -84,7 +83,6 @@ body {
   }
 }
 
-/* Responsive: En pantallas más pequeñas, los elementos se apilan */
 @media (max-width: 768px) {
   .menu-list {
     flex-direction: column;
@@ -93,7 +91,6 @@ body {
 
 /* MAIN */
 
-/* Animaciones */
 @keyframes fadeIn {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -210,7 +207,6 @@ body {
   transform: scale(1.02);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .main {
     flex-direction: column;
@@ -593,10 +589,6 @@ body {
   object-fit: contain;
   margin: 1rem 0;
   transition: transform 0.3s ease;
-}
-
-.product-card:hover .product-image {
-  transform: scale(1.05);
 }
 
 .product-rating {
@@ -1159,6 +1151,7 @@ body {
 .items-count {
   display: block;
   color: #666;
+  font-weight: 300;
   font-size: 1.1rem;
   margin-top: 0.5rem;
 }
@@ -1301,6 +1294,7 @@ body {
 .summary-row {
   display: flex;
   justify-content: space-between;
+  font-weight: 300;
   margin-bottom: 1rem;
   color: #666;
 }
@@ -1685,15 +1679,14 @@ button:hover {
 
 .products-filters {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
+  justify-content: space-between;
   margin-bottom: 2rem;
+  padding-inline: 1rem;
 }
 
 .search-container {
   flex: 1;
-  max-width: 400px;
+  max-width: 55rem;
   position: relative;
 }
 
@@ -1760,6 +1753,7 @@ button:hover {
 
 .product-description {
   font-size: 0.9rem;
+  font-weight: 300;
   color: #666;
   margin-bottom: 1rem;
   height: 60px;
@@ -1803,5 +1797,98 @@ button:hover {
 
   .products-page{
     margin-top: 10rem;
+  }
+}
+
+/* 
+  Not Found
+*/
+
+/* NotFound.css */
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+}
+
+.content {
+  max-width: 600px;
+  z-index: 1;
+}
+
+.error-code {
+  font-size: 8rem;
+  margin: 0;
+  color: #ff6b6b;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+.error-message {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #ffd93d;
+}
+
+.error-description {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  color: #ccc;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.home-button:hover {
+  background: #45a049;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.astronaut {
+  font-size: 8rem;
+  margin-top: 2rem;
+  animation: rotate 4s linear infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes rotate {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+  .error-code {
+    font-size: 6rem;
+  }
+  
+  .error-message {
+    font-size: 1.5rem;
+  }
+  
+  .astronaut {
+    font-size: 6rem;
   }
 }
